@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Dataset</title>
-    <link rel="stylesheet" href="genre.css">
-</head>
-<body>
+    <link rel="stylesheet" href="genre.css" />
+    <style>
+      .circle-images {
+        position: absolute;
+        left: 20px; /* Adjust left positioning as needed */
+        top: 150px; /* Adjust top positioning as needed */
+      }
+
+      .circle-image {
+        width: 150px; /* Adjust size as needed */
+        height: 150px; /* Adjust size as needed */
+        border-radius: 50%; /* Makes the image circular */
+        margin-bottom: 20px; /* Spacing between images */
+        display: block; /* Ensures images are displayed as block elements (one below the other) */
+      }
+
+      .container {
+        margin-left: 200px; /* Adjust margin to accommodate the images */
+      }
+    </style>
+  </head>
+  <body>
     <div class="navbar">
-        <div class="navbar-left">
-            <a href="Home.html">Title of the Website</a>
-        </div>
-        <div class="navbar-right">
-            <a href="Home.html">Home</a>
-            <a href="recommender.html">Recommender</a>
-            <a href="genre.html">Genre</a>
-            <a href="dataset.html">Dataset</a>
-            <a href="about.html">About Us</a>
-            <a href="login.html">Login</a>
-        </div>
+      <div class="navbar-left">
+        <a href="Home.html">Movie Recommendation Site</a>
+      </div>
+      <div class="navbar-right">
+        <a href="Home.html">Home</a>
+        <a href="recommender.html">Recommender</a>
+        <a href="genre.html">Genre</a>
+        <a href="dataset.html">Dataset</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login</a>
+      </div>
     </div>
     <div class="container">
-        <h1>List of Genres</h1>
-        <div class="genre-grid">
-            <ul id="movieList">
-                <li>Drama</li>
-                <li>Comedy</li>
-                <li>Action</li>
-                <li>Crime</li>
-                <li>Musical</li>
-                <li>Romance</li>
-                <li>Biography</li>
-                <li>Adventure</li>
-                <li>Family</li>
-                <li>Mystery</li>
-                <li>Thriller</li>
-                <li>Fantasy</li>
-            </ul>
-        </div>
+      <h1>List of Genres</h1>
+      <div class="genre-grid">
+        <ul id="movieList">
+          <li>Drama</li>
+          <li>Comedy</li>
+          <li>Action</li>
+          <li>Crime</li>
+          <li>Musical</li>
+          <li>Romance</li>
+          <li>Biography</li>
+          <li>Adventure</li>
+          <li>Family</li>
+          <li>Mystery</li>
+          <li>Thriller</li>
+          <li>Fantasy</li>
+        </ul>
+      </div>
     </div>
-</body>
+    <!-- Circular Images Section -->
+    <div class="circle-images">
+      <img src="sticker1.jpg" alt="Sticker 1" class="circle-image" />
+      <img src="sticker2.jpg" alt="Sticker 2" class="circle-image" />
+      <img src="sticker3.jpg" alt="Sticker 3" class="circle-image" />
+    </div>
+  </body>
 </html>

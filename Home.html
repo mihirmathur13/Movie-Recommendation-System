@@ -1,38 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Recommendation Site</title>
-    <link rel="stylesheet" href="home.css">
-</head>
-<body>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
     <div class="overlay"></div>
-    <div class="navbar">
-        <div class="navbar-left">
-            <a href="Home.html">MOVIE RECOMMENDER</a>
-        </div>
-        <div class="navbar-right">
-            <a href="Home.html">Home</a>
-            <a href="recommender.html">Recommender</a>
-            <a href="genre.html">Genre</a>
-            <a href="dataset.html">Dataset</a>
-            <a href="about.html">About Us</a>
-            <a href="login.html">Login</a>
-        </div>
-    </div>
+
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+      <a class="navbar-brand navbar-logo" href="#">MOVIE RECOMMENDER</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <div class="hori-selector">
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="Home.html"
+              ><i class="fas fa-home"></i>Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recommender.html"
+              ><i class="fas fa-video"></i>Recommender</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="genre.html"
+              ><i class="fas fa-theater-masks"></i>Genre</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dataset.html"
+              ><i class="fas fa-database"></i>Dataset</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"
+              ><i class="fas fa-info-circle"></i>About Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"
+              ><i class="fas fa-sign-in-alt"></i>Login</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
-        <a href="recommender.html" class="btn-recommend">Recommend Movies</a>
-        
-        <div class="section-title">Popular Movies</div>
-        <div class="row">
-            <img src="bajrangi.jpg" alt="Movie 1">
-            <img src="kkkg.jpg" alt="Movie 2">
-            <img src="Barfi!.jpg" alt="Movie 3">
-            <img src="hera_pheri.jpeg" alt="Movie 4">
-            <img src="life_of_pi.jpg" alt="Movie 5">
+      <a href="recommender.html" class="btn-recommend">Recommend Movies</a>
+
+      <div class="section-title">Popular Movies</div>
+      <div class="grid">
+        <div class="movie-item large">
+          <a
+            href="https://video.search.yahoo.com/search/video;_ylt=Awr9.zDY9ohmvboRpmlXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Nj?type=E210US885G0&p=airlift+trailer&fr=mcafee&turl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOVP.NY5udpty9MuApqVDZBSI6QHgFo%26pid%3DApi%26w%3D296%26h%3D156%26c%3D7%26p%3D0&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dvb5xCMbMfZ0&tit=AIRLIFT+THEATRICAL+TRAILER+%7C+Akshay+Kumar%2C+Nimrat+Kaur+%7C+Releasing+on+22nd+January%2C+2016+%7CT-Series&pos=01&vid=6b6749c802cc08024f8a0b4216a2aca2&sigr=utASWpE2bbMD&sigt=av73aKy.T03X&sigi=23Dg___V_Lse"
+          >
+            <img src="airlift.jpg" alt="Airlift" />
+          </a>
+          <div class="description">
+            <h3>Airlift</h3>
+            <p>Action, History</p>
+          </div>
         </div>
-        
+        <div class="movie-item small">
+          <a
+            href="https://video.search.yahoo.com/search/video;_ylt=Awr4912y9ohmAwISYR9XNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Nj?type=E210US885G0&p=kabhi+khushi+kabhi+gam+trailer&fr=mcafee&turl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOVP.tDsaRoIUZMPQEz1tD8yIoAHgFo%26pid%3DApi%26w%3D296%26h%3D156%26c%3D7%26p%3D0&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7uY1JbWZKPA&tit=Kabhi+Khushi+Kabhie+Gham+-+Official+Trailer+-+Amitabh+Bachchan%2C+Shahrukh+Khan%2C+Hrithik+Roshan%2C+Kajol&pos=01&vid=e072f5320e1329913acbc42624f8bd22&sigr=Q4ymdmxXBtOG&sigt=KbTCzEmVg_2S&sigi=HI7aaXXuf3da"
+          >
+            <img src="kkkg.jpg" alt="Kabhi Khushi Kabhi Gam" />
+          </a>
+          <div class="description">
+            <h3>Kabhi Khushi Kabhi Gam</h3>
+            <p>Drama, Family</p>
+          </div>
+        </div>
+        <div class="movie-item small">
+          <a
+            href="https://video.search.yahoo.com/search/video;_ylt=Awr.2kyK9ohmARARx95XNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Nj?type=E210US885G0&p=bajrangi+bhaijaan+trailer&fr=mcafee&turl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOVP.yBfvK_5uFNsv9h1tijOrpAHgFo%26pid%3DApi%26w%3D296%26h%3D156%26c%3D7%26p%3D0&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4nwAra0mz_Q&tit=Bajrangi+Bhaijaan+%7C+Official+Trailer+with+English+Subtitles%7C+Salman+Khan%2C+Kareena+Kapoor%2C+Nawazuddin&pos=01&vid=42f00838974dee7512fa0135c054ef32&sigr=MPGLQ_gg0bRE&sigt=qu1wRg5JoWlz&sigi=Un0u1ha8ToNW"
+          >
+            <img src="bajrangi.jpg" alt="Bajrangi Bhaijaan" />
+          </a>
+          <div class="description">
+            <h3>Bajrangi Bhaijaan</h3>
+            <p>Drama, Action</p>
+          </div>
+        </div>
+        <div class="movie-item small">
+          <a
+            href="https://video.search.yahoo.com/search/video;_ylt=Awr4911s9ohm1S8RcEZXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Nj?type=E210US885G0&p=barfi+trailer&fr=mcafee&turl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOVP.2iXOcNftNCsQiXwS4yOaNQHgFo%26pid%3DApi%26w%3D296%26h%3D156%26c%3D7%26p%3D0&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DY5MRdAhLTbc&tit=Barfii+trailer&pos=01&vid=9999626672d5845ffd814fb0efc86aad&sigr=8BZO3x1GRZcH&sigt=4yE1xqmQLy4B&sigi=9QK3gI3z9D5h"
+          >
+            <img src="Barfi!.jpg" alt="Barfi!" />
+          </a>
+          <div class="description">
+            <h3>Barfi!</h3>
+            <p>Comedy, Romance</p>
+          </div>
+        </div>
+        <div class="movie-item large">
+          <a
+            href="https://video.search.yahoo.com/search/video;_ylt=AwrjdJsz9ohm9VoPQMtXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Nj?type=E210US885G0&p=Phir+Hera+Pheri+trailer&fr=mcafee&turl=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOVP.v1qT6lXI3Layyi4KFmfGbwEsDh%26pid%3DApi%26w%3D296%26h%3D156%26c%3D7%26p%3D0&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUohq0_kla2g&tit=Phir+Hera+Pheri+-+Official+Trailer+%284K%29+%7C+Akshay+Kumar%2C+Paresh+Rawal%2C+Suniel+Shetty+%7C+Neeraj+Vora&pos=01&vid=0dc063c476a7d9f3b564c64899d3271a&sigr=DU6OyckgK5zg&sigt=rUXKg24BHf8a&sigi=8c4at55zU_Ha"
+          >
+            <img src="herapheri.jpg" alt="Phir Hera Pheri" />
+          </a>
+          <div class="description">
+            <h3>Hera Pheri</h3>
+            <p>Comedy</p>
+          </div>
+        </div>
+        <div class="movie-item small">
+          <a
+            href="https://video.search.yahoo.com/search/video;_ylt=AwrOstHy9YhmImgQWnVXNyoA;_ylu=Y29sbwNncTEEcG9zAzIEdnRpZAMEc2VjA3Nj?type=E210US885G0&p=life+of+pie&fr=mcafee&turl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOVP.xD20KxS1v98aqiehfzUY2AHgFo%26pid%3DApi%26w%3D296%26h%3D156%26c%3D7%26p%3D0&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3mMN693-F3U&tit=Life+of+Pi+Official+Trailer+%231+%282012%29+Ang+Lee+Movie+HD&pos=01&vid=0f73a061dc6aa0e9a6d368cf3e14144f&sigr=xkE7jtkF0VvE&sigt=BDkhhaVOgINT&sigi=s5BlFoU__ssb"
+          >
+            <img src="life_of_pi.jpg" alt="Life of Pi" />
+          </a>
+          <div class="description">
+            <h3>Life of Pi</h3>
+            <p>Adventure, Drama</p>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script>
+      // JavaScript for navbar interactivity
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarItems = document.querySelectorAll(".navbar a");
+
+        navbarItems.forEach((item) => {
+          item.addEventListener("mouseenter", function () {
+            const rect = this.getBoundingClientRect();
+            const left = rect.left + "px";
+            const width = rect.width + "px";
+
+            const horiSelector =
+              this.parentElement.parentElement.querySelector(".hori-selector");
+            horiSelector.style.left = left;
+            horiSelector.style.width = width;
+          });
+
+          item.addEventListener("mouseleave", function () {
+            const horiSelector =
+              this.parentElement.parentElement.querySelector(".hori-selector");
+            horiSelector.style.width = "0";
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

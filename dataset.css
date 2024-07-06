@@ -1,67 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('images.jfif') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("bgimg2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
 }
 
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 20px 40px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
+    background-color: #052548;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 100;
+  }
+/* .navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+} */
 .navbar a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
-    transition: color 0.3s;
-}
-
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 .navbar a:hover {
-    color: #f1c40f;
+  color: #f1c40f;
 }
 
 .container {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin: 20px;
-    border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 20px;
+  border-radius: 10px;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    animation: fadeInDown 1s;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s;
 }
 
 ul#movieList {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 ul#movieList li {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 8px;
-    transition: transform 0.3s, background-color 0.3s;
-    cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
 }
 
 ul#movieList li:hover {
-    transform: scale(1.05);
-    background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 ul#movieList li:active {
-    background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }

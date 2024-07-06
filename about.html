@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="genre.css" />
+    <style>
+        .circle-images {
+            position: absolute;
+            left: 20px;
+            /* Adjust left positioning as needed */
+            top: 150px;
+            /* Adjust top positioning as needed */
+        }
+
+        .circle-image {
+            width: 150px;
+            /* Adjust size as needed */
+            height: 150px;
+            /* Adjust size as needed */
+            border-radius: 50%;
+            /* Makes the image circular */
+            margin-bottom: 20px;
+            /* Spacing between images */
+            display: block;
+            /* Ensures images are displayed as block elements (one below the other) */
+        }
+
+        .about-us {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Make it take the full viewport height */
+            color: aliceblue;
+        }
+
+        .about-us-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* White with transparency */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            /* Control the width of the content box */
+            text-align: center;
+            /* Center-align text */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #052548;
+            padding: 10px 20px;
+            position: relative;
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            position: relative;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar-left a {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="Home.html">Movie Recommendation Site</a>
+        </div>
+        <div class="navbar-right">
+            <a href="Home.html">Home</a>
+            <a href="recommender.html">Recommender</a>
+            <a href="genre.html">Genre</a>
+            <a href="dataset.html">Dataset</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <!-- Circular Images Section -->
+    <div class="circle-images">
+        <img src="sticker1.jpg" alt="Sticker 1" class="circle-image" />
+        <img src="sticker2.jpg" alt="Sticker 2" class="circle-image" />
+        <img src="sticker3.jpg" alt="Sticker 3" class="circle-image" />
+    </div>
+    <!-- About Us Section -->
+    <div class="about-us">
+        <div class="about-us-content">
+            <h2>About Us</h2>
+            <p><strong>
+                    Welcome to our Movie Recommendation System for Indian regional movies! I am Mihir Mathur,
+                    a third-year engineering student with a passion for programming, machine learning, finance, and
+                    statistics.
+                    This project was born out of my love for movies and my desire to combine technology with
+                    entertainment.
+                    Understanding the challenge many people face in discovering great movies amidst the vast sea of
+                    options,
+                    I decided to create a recommendation system specifically tailored to Indian regional films.
+                    My goal is to enhance your movie-watching experience by providing personalized recommendations that
+                    cater to your unique tastes and preferences.
+                    Thank you for visiting, and I hope you find your next favorite movie here!
+                </strong></p>
+        </div>
+    </div>
+</body>
+
+</html>

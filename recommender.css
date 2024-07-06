@@ -1,125 +1,147 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('images.jfif') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
 }
 
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px 40px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+} */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 20px 40px;
-}
+    background-color: #052548;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 100;
+  }
 
-.navbar a {
+  .navbar a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
-}
-
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 .navbar a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .container {
-    padding: 40px 20px;
-    text-align: center;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-h1, h2 {
-    margin-bottom: 20px;
+h1,
+h2 {
+  margin-bottom: 20px;
 }
 
 .btn-group {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .btn-group button {
-    display: block;
-    width: 300px;
-    margin: 10px auto;
-    padding: 15px;
-    background-color: #33cfe4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
+  display: block;
+  width: 300px;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #33cfe4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .btn-group button:hover {
-    background-color: #f40612;
+  background-color: #f40612;
 }
 
 .form {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
 }
 
 form label {
-    display: block;
-    margin: 10px 0 5px;
+  display: block;
+  margin: 10px 0 5px;
 }
 
-form input, form select {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
+form input,
+form select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
 }
 
 form button {
-    background-color: #e50914;
-    color: #fff;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #e50914;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 form button:hover {
-    background-color: #f40612;
+  background-color: #f40612;
 }
 
 .recommendations {
-    margin-top: 40px;
-    background-color: #ffffff; opacity: 0.9; /* Black background */
-    padding: 20px;
-    border-radius: 5px;
+  margin-top: 40px;
+  background-color: #ffffff;
+  opacity: 0.9; /* Black background */
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .recommendations h2 {
-    color: #000000; /* White text for visibility */
+  color: #000000; /* White text for visibility */
 }
 
 .recommendations ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .recommendations li {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    color: #222020; /* White text for visibility */
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: #222020; /* White text for visibility */
 }
