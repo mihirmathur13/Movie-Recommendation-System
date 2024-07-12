@@ -64,7 +64,7 @@ body {
 
 .navbar a:hover {
   text-decoration: underline;
-  color: #f8f9fa;
+  color: #1c62b3;
 }
 
 .navbar-brand {
@@ -158,7 +158,7 @@ body {
 }
 
 .btn-recommend:hover {
-  background-color: #f40612;
+  background-color: #1c62b3;
 }
 
 .section-title {

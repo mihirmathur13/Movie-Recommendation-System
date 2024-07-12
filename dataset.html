@@ -1,36 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie List</title>
     <link rel="stylesheet" href="dataset.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="navbar">
-      <div class="navbar-left">
-        <a href="Home.html">Movie Recommendation Website</a>
-      </div>
-      <div class="navbar-right">
-        <a href="Home.html">Home</a>
-        <a href="recommender.html">Recommender</a>
-        <a href="genre.html">Genre</a>
-        <a href="dataset.html">Dataset</a>
-        <a href="about.html">About Us</a>
-        <a href="login.html">Login</a>
-      </div>
+        <div class="navbar-left">
+            <a href="Home.html">Movie Recommendation Website</a>
+        </div></li>
+        <div class="navbar-right">
+            <a href="Home.html">Home</a>
+            <a href="recommender.html">Recommender</a>
+            <a href="genre.html">Genre</a>
+            <a href="dataset.html">Dataset</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html">Login</a>
+        </div>
     </div>
-
     <div class="container">
-      <h1>Movie List</h1>
-      <ul id="movieList">
-        <!-- Movies will be dynamically added here -->
-      </ul>
+        <h1>Movie List</h1>
+        <ul id="movieList">
+            <li>Jo Jeeta Wohi Sikandar</li>
+            <li>Lakshya</li>
+            <li>Kai po che!</li>
+            <li>Peepli (Live)</li>
+            <li>Shortcut Safari</li>
+            <li>Kabhi Khushi Kabhie Gham...</li>
+            <li>Veer-Zaara</li>
+            <li>Gadar: Ek Prem Katha</li>
+            <li>Company</li>
+            <li>Swades</li>
+            <li>Sye</li>
+            <li>Bhaag Milkha Bhaag</li>
+            <li>Aankhen</li>
+            <li>Damul</li>
+            <li>Bajrangi Bhaijaan</li>
+            <li>Khamoshi: The Musical</li>
+            <li>Wake Up Sid</li>
+            <li>Baby</li>
+            <li>Hum Hain Rahi Pyar Ke</li>
+            <li>Kapoor & Sons</li>
+            <li>Neerja</li>
+            <li>Rainbow</li>
+            <li>Hum Aapke Hain Koun...!</li>
+            <li>My Name Is Khan</li>
+            <li>Rehnaa Hai Terre Dil Mein</li>
+            <li>Gol Maal</li>
+            <li>Aligarh</li>
+            <li>Airlift</li>
+            <li>Special 26</li>
+            <li>Maqbool</li>
+            <li>Chashme Buddoor</li>
+            <li>Padatik</li>
+            <li>Basant Bahar</li>
+            <li>Naam</li>
+            <li>Zubeidaa</li>
+            <li>Vishwavijay</li>
+            <li>Matrubhoomi: A Nation Without Women</li>
+            <li>Lekin...</li>
+            <li>Bheegi Raat</li>
+            <li>Shaukeen Kaminay</li>
+            <li>Raakh</li>
+            <li>Rahasya</li>
+            <li>Myoho</li>
+            <li>Chitchor</li>
+            <li>Parinda</li>
+            <li>Oonga</li>
+            <li>Babu</li>
+            <li>Umbartha</li>
+            <li>Hindustani</li>
+            <li>Mirch</li>
+            <li>Prahaar: The Final Attack</li>
+            <li>Station</li>
+            <li>Junoon</li>
+            <li>Mohalla Assi</li>
+            <li>Ghayal</li>
+            <li>Tum Bin...: Love Will Find a Way</li>
+            <li>Hey Ram</li>
+            <li>Haqeeqat</li>
+            <li>Piku</li>
+            <li>Kinara</li>
+            <li>Bas Yaari Rakho</li>
+            <li>Sehar</li>
+            <li>Mohan Rakesh's Adhe Adhure</li>
+            <li>Aamaar Bhuvan</li>
+            <li>Mandi</li>
+            <li>Papi</li>
+            <li>Jaane Bhi Do Yaaro</li>
+            <li>Najma</li>
+            <li>Karunamayudu</li>
+            <li>Bandit Queen</li>
+            <li>Zindagi</li>
+            <li>Devdas</li>
+            <li>Jai Jagannath</li>
+            <li>Ek Doctor Ki Maut</li>
+            <li>Baton Baton Mein</li>
+            <li>Dil Se..</li>
+            <li>Partha</li>
+            <li>Sholay 3D</li>
+            <li>Aandhi</li>
+            <li>Rang De Basanti</li>
+            <li>Ankhon Dekhi</li>
+            <li>PK</li>
+            <li>Kahaani</li>
+            <li>22 June 1897</li>
+            <li>Simhadri</li>
+            <li>27 Down</li>
+            <li>Teesri Kasam</li>
+            <li>Goa Dalli CID 999</li>
+            <li>Suddha</li>
+            <li>Kya Dilli Kya Lahore</li>
+            <li>Autohead</li>
+            <li>Vakratunda Mahakaaya</li>
+            <li>Vakil Babu</li>
+            <li>Dr. Babasaheb Ambedkar</li>
+            <li>Dil Chahta Hai</li>
+            <li>Swayamvar</li>
+            <li>Zanjeer</li>
+            <li>Uphaar</li>
+            <li>Iqbal</li>
+            <li>Ek Hota Vidushak</li>
+            <li>Africadalli Sheela</li>
+            <li>Maryada</li>
+            <li>The Churning</li>
+            <li>Raghav</li>
+            <li>Dilwale Dulhania Le Jayenge</li>
+            <li>Chettaniki Kallu Levu</li>
+            <li>Kalyug</li>
+            <li>Mrigayaa</li>
+            <li>Rocket Singh: Salesman of the Year</li>
+            <li>Kabhi Haan Kabhi Naa</li>
+            <li>Holi</li>
+            <li>Court</li>
+            <li>Pavitra Paapi</li>
+            <li>Bhobhar - The Live Ash</li>
+            <li>A Wednesday</li>
+            <li>Patala Bhairavi</li>
+            <li>Imtihan</li>
+            <li>Black</li>
+            <li>Tiger</li>
+            <li>Gangotri</li>
+            <li>Madaari</li>
+            <li>Khatta Meetha</li>
+            <li>Baazigar</li>
+            <li>Tanu Weds Manu Returns</li>
+            <li>Ninne Pelladatha</li>
+            <li>Paan Singh Tomar</li>
+            <li>Mr. India</li>
+            <li>Taare Zameen Par</li>
+            <li>Satya</li>
+            <li>Udaan</li>
+            <li>Chillar Party</li>
+            <li>Guzaarish</li>
+            <li>Trishna</li>
+            <li>Shirin Farhad</li>
+            <li>Johnny Gaddaar</li>
+            <li>Madhumati</li>
+            <li>Griha Pravesh</li>
+            <li>Ramana</li>
+            <li>Train Station</li>
+            <li>Manokaamnaa</li>
+            <li>Shaheed</li>
+            <li>Black Friday</li>
+            <li>Solva Saal</li>
+            <li>Andaz</li>
+            <li>Sharey Chuattar</li>
+            <li>Swapner Feriwala</li>
+            <li>Amu</li>
+            <li>Shashi Babur Sansar</li>
+            <li>Chirodini Tumi Je Amar 2</li>
+            <li>Joyjatra</li>
+            <li>Uttar Falguni</li>
+            <li>Jiban Trishna</li>
+            <li>Moods of Crime</li>
+            <li>Haggada Kone: End of the Rope</li>
+            <li>Parched</li>
+            <li>Ankush</li>
+            <li>Ekattorer Jishu</li>
+            <li>Titli</li>
+            <li>Thana Theke Aschi</li>
+            <li>Debshishu</li>
+            <li>Pratyaghat</li>
+            <li>Brihonnola</li>
+            <li>Chhaya Surya</li>
+            <li>Sawan Ko Aane Do</li>
+            <li>Firaaq</li>
+            <li>Kammatti Paadam</li>
+            <li>Duniya</li>
+            <li>Saranga</li>
+            <li>Byabadhan</li>
+            <li>Amar Mayer Shapath</li>
+            <li>Distant Thunder</li>
+            <li>Mehboob Ki Mehndi</li>
+            <li>Ajker Santan</li>
+            <li>Aamir</li>
+            <li>Dilli Ka Thug</li>
+            <li>Close Encounters of the Third Kind</li>
+            <li>Shatru</li>
+            <li>Suraag</li>
+            <li>Marhi Da Deeva</li>
+            <li>Mamta</li>
+            <li>F. M. (Fun Aur Masti)</li>
+            <li>Maya</li>
+            <li>Dil Ek Mandir</li>
+            <li>The Legend of Bhagat Singh</li>
+            <li>Woh 7 Din</li>
+            <li>Kerry on Kutton</li>
+            <li>Dharini</li>
+            <li>Bhairava Dweepam</li>
+            <li>Dard Ka Rishta</li>
+            <li>Band Baaja Baaraat</li>
+            <li>...Yahaan</li>
+            <li>Ramchand Pakistani</li>
+            <li>Naseem</li>
+            <li>Sarivar Sari</li>
+            <li>Ankur: The Seedling</li>
+            <li>I Am Kalam</li>
+            <li>Tapasya</li>
+            <li>Ship of Theseus</li>
+            <li>C.I.D.</li>
+            <li>Ziddi</li>
+            <li>Mera Saaya</li>
+            <li>Rough Book</li>
+            <li>Peechha Karro</li>
+            <li>OMG: Oh My God!</li>
+            <li>Baharon Ke Sapne</li>
+            <li>Geet Gaata Chal</li>
+            <li>Qayamat Se Qayamat Tak</li>
+            <li>Black Home</li>
+            <li>Dasvidaniya</li>
+            <li>Tulsidas</li>
+            <li>Lion</li>
+            <li>Barfi!</li>
+            <li>India's Daughter</li>
+            <li>Vicky Donor</li>
+            <li>Galpa Holeo Satyi</li>
+            <li>Anhonee</li>
+            <li>Teesri Manzil</li>
+            <li>Asiya</li>
+            <li>Kathantara</li>
+            <li>Pratibandh</li>
+            <li>Shilpi</li>
+            <li>Anupama</li>
+            <li>Tu Hai Mera Sunday</li>
+            <li>Sajher Pradip</li>
+            <li>Jibondhuli</li>
+            <li>Mere Apne</li>
+            <li>Bhalobasa</li>
+            <li>Runway</li>
+            <li>Phulkumar</li>
+            <li>Ajana Batas</li>
+            <li>Priya</li>
+            <li>Chatrapathi</li>
+            <li>Khakee</li>
+            <li>Ajantrik</li>
+            <li>Charachar</li>
+            <li>Drishyam</li>
+            <li>Louhakapat</li>
+            <li>Santan</li>
+            <li>Nirjan Saikate</li>
+            <li>36 Chowringhee Lane</li>
+            <li>Farz Aur Mohobbat alias Navsherwan-E-Adil</li>
+            <li>Mr. and Mrs. Iyer</li>
+            <li>Bawarchi</li>
+            <li>Lakshmi</li>
+            <li>Raktanadir Dhara</li>
+            <li>Guru</li>
+            <li>Meena</li>
+            <li>Chameli Ki Shaadi</li>
+            <li>Budhia Singh: Born to Run</li>
+            <li>Dil Ne Phir Yaad Kiya</li>
+            <li>Don</li>
+            <li>Humayun</li>
+            <li>Sadma</li>
+            <li>Ek Ghar</li>
+            <li>Anari</li>
+            <li>Abhilasha</li>
+            <li>Kota Junction</li>
+            <li>Makdee</li>
+            <li>Laal Rang</li>
+            <li>Vishwaroopam</li>
+            <li>Border</li>
+            <li>Bajrangbali</li>
+            <li>Sharafat</li>
+            <li>Adhikar</li>
+            <li>Dhanwan</li>
+            <li>Ek Duuje Ke Liye</li>
+            <li>Mayurpankh</li>
+            <li>Oye Lucky! Lucky Oye!</li>
+            <li>Katha</li>
+            <li>Roja</li>
+            <li>Second Marriage Dot Com</li>
+            <li>Sardar</li>
+            <li>Bubble Gum</li>
+            <li>Muqaddar Ka Sikandar</li>
+            <li>Sri Venkateswara Mahatmyam</li>
+            <li>Karz</li>
+            <li>Anniyan</li>
+            <li>Shola Aur Shabnam</li>
+            <li>Ankahee</li>
+            <li>The Namesake</li>
+            <li>Mumbai Love</li>
+            <li>Udta Punjab</li>
+            <li>Dharti</li>
+            <li>Pyaar Ka Punchnama</li>
+            <li>Ek Pal</li>
+            <li>Chhoti Si Baat</li>
+            <li>Sri Shirdi Saibaba Mahathyam</li>
+            <li>Lage Raho Munna Bhai</li>
+            <li>Rock On!!</li>
+            <li>Khamosh</li>
+            <li>Khoya</li>
+            <li>Meet Mere Man Ke</li>
+            <li>31st October</li>
+            <li>Parzania</li>
+            <li>Gangs of Wasseypur</li>
+            <li>Lagna Pahave Karun</li>
+            <li>Zeenat</li>
+            <li>Nartaki</li>
+            <li>Koshish</li>
+            <li>Khamoshi</li>
+            <li>Ritu</li>
+            <li>Mujhse Fraaandship Karoge</li>
+            <li>Zakhm</li>
+            <li>Devar</li>
+            <li>Kabhie Kabhie</li>
+            <li>My Dear Kuttichaathan</li>
+            <li>Masoom</li>
+            <li>Ijaazat</li>
+            <li>Mr. India</li>
+            <li>1971</li>
+            <li>Vallah Kya Baat Hai</li>
+            <li>Little Terrors</li>
+            <li>Earth</li>
+            <li>Na Maloom Afraad</li>
+            <li>Aksbandh</li>
+            <li>Zindagi Kitni Haseen Hay</li>
+            <li>Dance Kahani</li>
+            <li>Scorching Winds</li>
+            <li>Yeh Aman</li>
+            <li>Bin Roye</li>
+            <li>Baji</li>
+            <li>Moor</li>
+            <li>Ek Phool Char Kaante</li>
+            <li>Dor</li>
+            <li>Pyaar Ka Punchnama 2</li>
+            <li>Night's End</li>
+            <li>Jaane Tu... Ya Jaane Na</li>
+            <li>Chehere: A Modern Day Classic</li>
+            <li>Muthu</li>
+            <li>Shiva</li>
+            <li>Naya Daur</li>
+            <li>Kanoon</li>
+            <li>Mahananda</li>
+            <li>Seema</li>
+            <li>Madras Cafe</li>
+            <li>Thuppakki</li>
+            <li>Prem Geet</li>
+            <li>Raincoat</li>
+            <li>Munna Bhai M.B.B.S.</li>
+            <li>Sarkar</li>
+            <li>Pyaasa Sawan</li>
+            <li>MSG 2 the Messenger</li>
+            <li>Life of Pi</li>
+            <li>Hum Log</li>
+            <li>Hazaaron Khwaishein Aisi</li>
+            <li>Hera Pheri</li>
+            <li>Bhakta Siriyala</li>
+            <li>Hungama</li>
+            <li>Darr</li>
+            <li>Paanch</li>
+            <li>Kaala Patthar</li>
+            <li>M.S. Dhoni: The Untold Story</li>
+            <li>Agneepath</li>
+            <li>Jab We Met</li>
+            <li>Sholay</li>
+            <li>3 Idiots</li>
+            <li>Bagh Bahadur</li>
+            <li>Upkar</li>
+            <li>Nayak: The Real Hero</li>
+            <li>Samadhi</li>
+            <li>Zara Si Zindagi</li>
+            <li>Chapekar Brothers</li>
+            <li>Phoring</li>
+            <li>Amar Prem</li>
+            <li>Delhi Belly</li>
+            <li>Naram Garam</li>
+            <li>Days of Tafree</li>
+            <li>Attahaasa</li>
+            <li>Doli</li>
+            <li>Baghban</li>
+            <li>Khargosh</li>
+            <li>Satyakam</li>
+            <li>Gharana</li>
+            <li>Dharm</li>
+            <li>Talvar</li>
+            <li>Baazi</li>
+            <li>Saaransh</li>
+            <li>Bheja Fry</li>
+            <li>Once Upon a Time in Bihar</li>
+            <li>Dulhan Wahi Jo Piya Man Bhaaye</li>
+            <li>Navarasa</li>
+            <li>Mera Naam Joker</li>
+            <li>Kanyadaan</li>
+            <li>Mili</li>
+            <li>Triyacharitra</li>
+            <li>Cheluvi</li>
+            <li>Phagun</li>
+            <li>Yuva</li>
+            <li>Pink</li>
+            <li>Nil Battey Sannata</li>
+            <li>Ab Tak Chhappan</li>
+            <li>Gangaajal</li>
+            <li>Dil Hi To Hai</li>
+            <li>Hai Apna Dil Toh Awara</li>
+            <li>Kerala Varma Pazhassi Raja</li>
+            <li>Mirza Ghalib</li>
+            <li>Project Marathwada</li>
+            <li>Halo</li>
+            <li>Road to Sangam</li>
+            <li>Bhavni Bhavai</li>
+            <li>Rikki-Tikki-Tavi</li>
+            <li>Woh Kaun Thi?</li>
+            <li>Abhishap</li>
+            <li>Athadu</li>
+            <li>Chhatrapati Shivaji</li>
+            <li>My Brother... Nikhil</li>
+            <li>Jodhaa Akbar</li>
+            <li>Kevi Rite Jaish</li>
+            <li>Anand Math</li>
+            <li>Saraswathi Sabatham</li>
+            <li>Kuch Kuch Hota Hai</li>
+            <li>Jugnu</li>
+            <li>New Delhi</li>
+            <li>Baseraa</li>
+            <li>Angoor</li>
+            <li>Water</li>
+            <li>Vaishali</li>
+            <li>Nayakan</li>
+            <li>Queen</li>
+            <li>Karamati Coat</li>
+            <li>Vivekananda</li>
+            <li>Tere Bin Laden</li>
+            <li>Anbe Sivam</li>
+            <li>Mausam</li>
+            <li>Do Chehre</li>
+            <li>Kamla Ki Maut</li>
+            <li>Arohan</li>
+            <li>Slumdog Millionaire</li>
+            <li>Anjali</li>
+            <li>Pyaar Ki Jeet</li>
+            <li>Titli</li>
+            <li>Utopia</li>
+            <li>Anubhav</li>
+            <li>Phir Se...</li>
+            <li>Trishagni</li>
+            <li>Zindagi Na Milegi Dobara</li>
+            <li>Bhuvan Shome</li>
+            <li>Pinjar</li>
+            <li>Maya Bazaar</li>
+            <li>Namkeen</li>
+            <li>Chandni Bar</li>
+            <li>The Blue Umbrella</li>
+            <li>Lagaan: Once Upon a Time in India</li>
+            <li>Chand Ke Paar Chalo</li>
+            <li>Sarfarosh</li>
+            <li>Kiccha</li>
+            <li>Haider</li>
+            <li>MSG the Warrior: Lion Heart</li>
+            <li>Fan</li>
+            <li>Jogan</li>
+            <li>Geet</li>
+            <li>Mrityudand: The Death Sentence</li>
+            <li>Pagdi: The Honour</li>
+            <li>Manorama Six Feet Under</li>
+            <li>Dil Toh Deewana Hai</li>
+            <li>Agni IPS</li>
+            <li>Ustadon Ke Ustad</li>
+            <li>Malli</li>
+            <li>Ayyappa Swamy Mahatyam</li>
+            <li>Do Ustad</li>
+            <li>Thanks Maa</li>
+            <li>Chaar Sahibzaade</li>
+            <li>Kala Pani</li>
+            <li>Chupke Chupke</li>
+            <li>Hatey Bazarey</li>
+            <li>Dulaara</li>
+            <li>Apradhi Kaun?</li>
+            <li>The Message</li>
+            <li>Chandu</li>
+            <li>Virasat</li>
+            <li>Bol</li>
+            <li>Babla</li>
+            <li>Ram Rajya</li>
+            <li>Dulhan Chahi Pakistan Se</li>
+            <li>Vishwaroop</li>
+            <li>Khaleja</li>
+            <li>Kajarya</li>
+            <li>The Lunchbox</li>
+            <li>Manzil</li>
+            <li>Haraamkhor</li>
+            <li>Dil Deke Dekho</li>
+            <li>Tel Malish Boot Polish</li>
+            <li>Dev Bhoomi</li>
+            <li>Devdas</li>
+            <li>Aghaat</li>
+            <li>Bhumika</li>
+            <li>English Vinglish</li>
+            <li>Swami Ayyappan</li>
+            <li>After the Wedding</li>
+            <li>Y.M.I. Yeh Mera India</li>
+            <li>Mohabbat Zindagi Hai</li>
+            <li>Baarish</li>
+            <li>Kaun?</li>
+            <li>Sivaji</li>
+            <li>Sant Dnyaneshwar</li>
+            <li>Maachis</li>
+            <li>Andaz Apna Apna</li>
+            <li>Isi Life Mein...!</li>
+            <li>Abhimaan</li>
+            <li>Vaastav: The Reality</li>
+            <li>Servus Ishq</li>
+            <li>Ek Sapera Ek Lutera</li>
+            <li>Stanley Ka Dabba</li>
+            <li>Ek Hasina Thi</li>
+            <li>Ghar Dwaar</li>
+            <li>Adi Shankaracharya</li>
+            <li>Neecha Nagar</li>
+            <li>Gandhi, My Father</li>
+            <li>Bawandar</li>
+            <li>Highway</li>
+            <li>Phas Gaye Re Obama</li>
+            <li>Do Bigha Zamin</li>
+            <li>Sampoorna Mahabharat</li>
+            <li>Hum Dil De Chuke Sanam</li>
+            <li>Ugly</li>
+            <li>LSD: Love, Sex Aur Dhokha</li>
+            <li>Dubai Return</li>
+            <li>Shool</li>
+            <li>Rockstar</li>
+            <li>Salaam Bombay!</li>
+            <li>Patita</li>
+            <li>Hum Tum Dushman Dushman</li>
+            <li>Badlapur</li>
+            <li>The Deceivers</li>
+            <li>Hotel Salvation</li>
+            <li>Walkaway</li>
+            <li>Omkara</li>
+            <li>Chak de! India</li>
+            <li>Kaminey</li>
+            <li>Noukadubi</li>
+            <li>Badhu Nirupama</li>
+            <li>Gaman</li>
+            <li>Gour Hari Dastaan: The Freedom File</li>
+            <li>Half Ticket</li>
+            <li>Gulaal</li>
+            <li>Bloody Isshq</li>
+            <li>Hawaa Hawaai</li>
+            <li>Khosla Ka Ghosla!</li>
+            <li>Parinati</li>
+            <li>Shackle</li>
+            <li>Ek Se Badhkar Ek</li>
+            <li>Oraalppokkam</li>
+            <li>Deewaar</li>
+            <li>Aakhri Khat</li>
+            <li>Deedar</li>
+            <li>Saala Khadoos</li>
+            <li>Darmiyaan: In Between</li>
+            <li>Chalti Ka Naam Gaadi</li>
+            <li>Arth</li>
+            <li>Woh Main Nahin</li>
+            <li>Kismet</li>
+            <li>Shakti</li>
+            <li>Railway Platform</li>
+            <li>Jal Bin Machhli Nritya Bin Bijli</li>
+            <li>Jagte Raho</li>
+            <li>3 Deewarein</li>
+            <li>Lakeer Ka Fakeer</li>
+            <li>Rangeela</li>
+            <li>Sita Swayamvar</li>
+            <li>Magadheera</li>
+            <li>1 - Nenokkadine</li>
+            <li>Swayam Krushi</li>
+            <li>Manmadhudu</li>
+            <li>Baahubali: The Beginning</li>
+            <li>Happy Days</li>
+            <li>Okkadu</li>
+            <li>Engeyum Eppodhum</li>
+            <li>Aha Naa Pellanta</li>
+            <li>Bommarillu</li>
+            <li>Shankarabharanam</li>
+        </ul>
     </div>
-
     <!-- Include scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="dataset.js"></script>
     <script src="movies.js"></script>
-  </body>
+</body>
+
 </html>

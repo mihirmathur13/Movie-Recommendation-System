@@ -58,7 +58,7 @@ function submitLikedMoviesForm(event) {
     const likedMovies = document.getElementById('likedMovies').value.split(',').map(movie => movie.trim());
     const data = { likedMovies };
     fetchRecommendations('/api/recommend/liked', data);
-}
+}``
 
 function submitGenresForm(event) {
     event.preventDefault();

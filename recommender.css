@@ -73,7 +73,7 @@ h2 {
   width: 300px;
   margin: 10px auto;
   padding: 15px;
-  background-color: #33cfe4;
+  background-color: #17385c;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -82,7 +82,7 @@ h2 {
 }
 
 .btn-group button:hover {
-  background-color: #f40612;
+  background-color: #1c62b3;
 }
 
 .form {
@@ -109,7 +109,7 @@ form select {
 }
 
 form button {
-  background-color: #e50914;
+  background-color: #17385c;
   color: #fff;
   padding: 15px;
   border: none;
@@ -118,7 +118,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #f40612;
+  background-color: #1c62b3;
 }
 
 .recommendations {

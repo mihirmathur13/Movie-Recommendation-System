@@ -1,74 +1,58 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
     const rowsPerPage = 10;
     let currentPage = 1;
     let dataset = [];
 
-    function fetchDataset() {
-        fetch('/api/dataset')
-            .then(response => response.json())
-            .then(data => {
-                dataset = data.movies;
-                displayPage(1);
-            })
-            .catch(error => console.error('Error fetching dataset:', error));
+    function fetchCSVData() {
+      fetch("unique_movie.csv")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.text();
+        })
+        .then((csvData) => {
+          parseCSV(csvData);
+        })
+        .catch((error) =>
+          console.error("Error fetching CSV data:", error.message)
+        );
+    }
+
+    function parseCSV(csvData) {
+      Papa.parse(csvData, {
+        header: true,
+        complete: function (results) {
+          console.log("Parsed CSV:", results.data);
+          dataset = results.data || [];
+          displayPage(1);
+        },
+        error: function (error) {
+          console.error("Error parsing CSV:", error);
+        },
+      });
     }
 
     function displayPage(page) {
-        currentPage = page;
-        const tableContainer = document.getElementById('dataset-table-container');
-        const paginationControls = document.getElementById('pagination-controls');
+      currentPage = page;
+      const movieList = document.getElementById("movieList");
 
-        // Clear previous content
-        tableContainer.innerHTML = '';
-        paginationControls.innerHTML = '';
+      // Clear previous content
+      movieList.innerHTML = "";
 
-        // Create table
-        const table = document.createElement('table');
-        const thead = document.createElement('thead');
-        const tbody = document.createElement('tbody');
+      // Table rows
+      const start = (page - 1) * rowsPerPage;
+      const end = start + rowsPerPage;
+      const paginatedItems = dataset.slice(start, end);
+      paginatedItems.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item.name; // Displaying only movie name
+        movieList.appendChild(li);
+      });
 
-        // Table headers
-        const headers = ['Title', 'Genre', 'Director', 'Cast', 'Year', 'Rating'];
-        const tr = document.createElement('tr');
-        headers.forEach(header => {
-            const th = document.createElement('th');
-            th.textContent = header;
-            tr.appendChild(th);
-        });
-        thead.appendChild(tr);
-
-        // Table rows
-        const start = (page - 1) * rowsPerPage;
-        const end = start + rowsPerPage;
-        const paginatedItems = dataset.slice(start, end);
-        paginatedItems.forEach(item => {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td>${item.title}</td>
-                <td>${item.genre}</td>
-                <td>${item.director}</td>
-                <td>${item.cast}</td>
-                <td>${item.year}</td>
-                <td>${item.rating}</td>
-            `;
-            tbody.appendChild(tr);
-        });
-
-        table.appendChild(thead);
-        table.appendChild(tbody);
-        tableContainer.appendChild(table);
-
-        // Pagination controls
-        const totalPages = Math.ceil(dataset.length / rowsPerPage);
-
-        for (let i = 1; i <= totalPages; i++) {
-            const button = document.createElement('button');
-            button.textContent = i;
-            button.disabled = i === currentPage;
-            button.addEventListener('click', () => displayPage(i));
-            paginationControls.appendChild(button);
-        }
+      // Implement pagination controls if needed
     }
 
-    fetchDataset();
-});
+    // Fetch CSV data on page load
+    fetchCSVData();
+  });

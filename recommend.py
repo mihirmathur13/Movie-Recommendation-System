@@ -15,8 +15,10 @@ app = Flask(__name__)
 CORS(app)
 # CORS(app, resources={r"/api/*": {"origins": ""}})
 # CORS(app, resources={r"/api/*": {"origins": "*"}})
-
-# Load your data
+# app = Flask(__name__)
+# CORS(app, origins=['*'],
+#      methods=['GET', 'POST'])
+# # Load your data
 df_copy6 = pd.read_csv('Original_Dataset.csv')
 umd = pd.read_csv('Unique_movie.csv')
 

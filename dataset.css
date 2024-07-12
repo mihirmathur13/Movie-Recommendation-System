@@ -41,7 +41,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
 .navbar a:hover {
-  color: #f1c40f;
+    text-decoration: underline;
+    color: #1c62b3;
 }
 
 .container {
